@@ -42,7 +42,6 @@ namespace SourceCode.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lbTimer = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbTimer2 = new System.Windows.Forms.Label();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -50,6 +49,7 @@ namespace SourceCode.GUI
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -117,7 +117,7 @@ namespace SourceCode.GUI
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(91, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 16);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tài khoản";
             // 
@@ -132,7 +132,7 @@ namespace SourceCode.GUI
             this.txtUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUser.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUser.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtUser.IconLeft")));
             this.txtUser.Location = new System.Drawing.Point(88, 122);
@@ -154,7 +154,7 @@ namespace SourceCode.GUI
             this.txtPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPass.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPass.IconLeft")));
             this.txtPass.Location = new System.Drawing.Point(88, 192);
@@ -189,7 +189,7 @@ namespace SourceCode.GUI
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(91, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 16);
+            this.label2.Size = new System.Drawing.Size(61, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Mật khẩu";
             // 
@@ -209,26 +209,21 @@ namespace SourceCode.GUI
             // 
             this.lbTimer.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbTimer.AutoSize = true;
-            this.lbTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTimer.Font = new System.Drawing.Font("DS-Digital", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTimer.Location = new System.Drawing.Point(525, 224);
             this.lbTimer.Name = "lbTimer";
-            this.lbTimer.Size = new System.Drawing.Size(158, 73);
+            this.lbTimer.Size = new System.Drawing.Size(134, 63);
             this.lbTimer.TabIndex = 18;
             this.lbTimer.Text = "4:44";
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // lbTimer2
             // 
             this.lbTimer2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbTimer2.AutoSize = true;
-            this.lbTimer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTimer2.Font = new System.Drawing.Font("DS-Digital", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTimer2.Location = new System.Drawing.Point(511, 306);
             this.lbTimer2.Name = "lbTimer2";
-            this.lbTimer2.Size = new System.Drawing.Size(189, 39);
+            this.lbTimer2.Size = new System.Drawing.Size(183, 35);
             this.lbTimer2.TabIndex = 19;
             this.lbTimer2.Text = "25/06/2022";
             // 
@@ -283,6 +278,11 @@ namespace SourceCode.GUI
             this.guna2Elipse1.BorderRadius = 12;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // fLogin
             // 
             this.AcceptButton = this.btnLogin;
@@ -300,6 +300,7 @@ namespace SourceCode.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fLogin";
             this.Text = "fLogin";
+            this.Load += new System.EventHandler(this.fLogin_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -321,7 +322,6 @@ namespace SourceCode.GUI
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label lbTimer;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbTimer2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
@@ -329,5 +329,6 @@ namespace SourceCode.GUI
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
