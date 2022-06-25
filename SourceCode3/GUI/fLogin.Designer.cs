@@ -210,7 +210,11 @@ namespace SourceCode.GUI
             this.lbTimer.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbTimer.AutoSize = true;
             this.lbTimer.Font = new System.Drawing.Font("DS-Digital", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lbTimer.Location = new System.Drawing.Point(525, 224);
+=======
+            this.lbTimer.Location = new System.Drawing.Point(540, 204);
+>>>>>>> 047436098f04eb1f606488016cd615bb7ac1effd
             this.lbTimer.Name = "lbTimer";
             this.lbTimer.Size = new System.Drawing.Size(134, 63);
             this.lbTimer.TabIndex = 18;
@@ -220,10 +224,17 @@ namespace SourceCode.GUI
             // 
             this.lbTimer2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbTimer2.AutoSize = true;
+<<<<<<< HEAD
             this.lbTimer2.Font = new System.Drawing.Font("DS-Digital", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTimer2.Location = new System.Drawing.Point(511, 306);
             this.lbTimer2.Name = "lbTimer2";
             this.lbTimer2.Size = new System.Drawing.Size(183, 35);
+=======
+            this.lbTimer2.Font = new System.Drawing.Font("DS-Digital", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTimer2.Location = new System.Drawing.Point(474, 306);
+            this.lbTimer2.Name = "lbTimer2";
+            this.lbTimer2.Size = new System.Drawing.Size(256, 47);
+>>>>>>> 047436098f04eb1f606488016cd615bb7ac1effd
             this.lbTimer2.TabIndex = 19;
             this.lbTimer2.Text = "25/06/2022";
             // 
