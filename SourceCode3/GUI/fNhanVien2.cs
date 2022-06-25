@@ -43,7 +43,7 @@ namespace SourceCode.GUI
                 this.txtTK.Text = data.TenDangNhap;
                 this.txtTK.Enabled = false;
                 this.txtMK.Text = data.MatKhau;
-                this.txtLuong.Text = data.Luong.ToString();
+                this.txtLuong.Text = String.Format("{0:0.##}", data.Luong);
                 this.dateLamViec.Value = data.NgayLamViec;
                 this.txtSDT.Text = data.SDT;
             }

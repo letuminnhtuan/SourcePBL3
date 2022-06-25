@@ -29,19 +29,20 @@ namespace SourceCode.GUI
         {
             if (BLL_QLMA.Instance.GetMonAnByMaMonAn(this.MaMonAn) != null)
             {
+                MonAn data = BLL_QLMA.Instance.GetMonAnByMaMonAn(this.MaMonAn);
                 foreach (CBBItem i in this.cbbLoaiMonAn.Items)
                 {
-                    if (i.Key.Equals(BLL_QLMA.Instance.GetMonAnByMaMonAn(this.MaMonAn).MaLoaiMonAn))
+                    if (i.Key.Equals(data.MaLoaiMonAn))
                     {
                         this.cbbLoaiMonAn.Text = i.Value;
                         break;
                     }
                 }
-                this.txtMaMonAn.Text = BLL_QLMA.Instance.GetMonAnByMaMonAn(this.MaMonAn).MaMonAn;
+                this.txtMaMonAn.Text = data.MaMonAn;
                 this.txtMaMonAn.Enabled = false;
-                this.txtTenMonAn.Text = BLL_QLMA.Instance.GetMonAnByMaMonAn(this.MaMonAn).TenMonAn;
-                this.txtGiaTien.Text = BLL_QLMA.Instance.GetMonAnByMaMonAn(this.MaMonAn).GiaTien.ToString();
-                this.txtSoLuong.Text = BLL_QLMA.Instance.GetMonAnByMaMonAn(this.MaMonAn).SoLuong.ToString();
+                this.txtTenMonAn.Text = data.TenMonAn;
+                this.txtGiaTien.Text = String.Format("{0:0.##}", data.GiaTien);
+                this.txtSoLuong.Text = data.SoLuong.ToString();
             }
         }
         private void btnOK_Click(object sender, EventArgs e)
@@ -68,6 +69,7 @@ namespace SourceCode.GUI
                 }
                 else
                 {
+
                     if (!BLL_ValidateData.Instance.CheckNum(this.txtGiaTien.Text))
                     {
                         MessageBox.Show("Lỗi dữ liệu giá tiền món ăn!!", "Error!");
