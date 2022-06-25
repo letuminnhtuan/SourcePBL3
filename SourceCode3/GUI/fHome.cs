@@ -142,7 +142,7 @@ namespace SourceCode.GUI
         {
             if (MessageBox.Show("Bạn đã xác nhận đặt món?", "Đặt món", MessageBoxButtons.OKCancel, MessageBoxIcon.None, MessageBoxDefaultButton.Button2) == DialogResult.OK)
             {
-                if (cbbThanhToan.SelectedIndex >= 0)
+                if (this.cbbThanhToan.SelectedIndex >= 0)
                 {
                     decimal Tong = 0;
                     foreach (DatMonAn i in temp)

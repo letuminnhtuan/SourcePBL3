@@ -155,7 +155,7 @@
             this.dataNV.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataNV.RowHeadersVisible = false;
             this.dataNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataNV.Size = new System.Drawing.Size(935, 470);
+            this.dataNV.Size = new System.Drawing.Size(935, 495);
             this.dataNV.TabIndex = 35;
             this.dataNV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataNV.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -192,7 +192,7 @@
             this.btnDelNV.FillColor = System.Drawing.Color.LightGray;
             this.btnDelNV.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnDelNV.ForeColor = System.Drawing.Color.Black;
-            this.btnDelNV.Location = new System.Drawing.Point(649, 530);
+            this.btnDelNV.Location = new System.Drawing.Point(649, 555);
             this.btnDelNV.Name = "btnDelNV";
             this.btnDelNV.Size = new System.Drawing.Size(93, 35);
             this.btnDelNV.TabIndex = 38;
@@ -212,7 +212,7 @@
             this.btnUpdateNV.FillColor = System.Drawing.Color.LightGray;
             this.btnUpdateNV.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnUpdateNV.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateNV.Location = new System.Drawing.Point(546, 530);
+            this.btnUpdateNV.Location = new System.Drawing.Point(546, 555);
             this.btnUpdateNV.Name = "btnUpdateNV";
             this.btnUpdateNV.Size = new System.Drawing.Size(97, 35);
             this.btnUpdateNV.TabIndex = 37;
@@ -233,7 +233,7 @@
             this.btnAddNV.FillColor = System.Drawing.Color.LightGray;
             this.btnAddNV.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnAddNV.ForeColor = System.Drawing.Color.Black;
-            this.btnAddNV.Location = new System.Drawing.Point(444, 530);
+            this.btnAddNV.Location = new System.Drawing.Point(444, 555);
             this.btnAddNV.Name = "btnAddNV";
             this.btnAddNV.Size = new System.Drawing.Size(96, 35);
             this.btnAddNV.TabIndex = 36;
@@ -256,7 +256,7 @@
             "Ten nhan vien",
             "Luong",
             "Ngay lam viec"});
-            this.cbbSortNV.Location = new System.Drawing.Point(748, 530);
+            this.cbbSortNV.Location = new System.Drawing.Point(748, 555);
             this.cbbSortNV.Name = "cbbSortNV";
             this.cbbSortNV.Size = new System.Drawing.Size(202, 36);
             this.cbbSortNV.TabIndex = 39;
@@ -266,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 578);
+            this.ClientSize = new System.Drawing.Size(962, 603);
             this.Controls.Add(this.cbbSortNV);
             this.Controls.Add(this.btnDelNV);
             this.Controls.Add(this.btnUpdateNV);

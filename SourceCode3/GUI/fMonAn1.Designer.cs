@@ -155,7 +155,7 @@
             this.dataMonAn.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataMonAn.RowHeadersVisible = false;
             this.dataMonAn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataMonAn.Size = new System.Drawing.Size(934, 470);
+            this.dataMonAn.Size = new System.Drawing.Size(934, 495);
             this.dataMonAn.TabIndex = 23;
             this.dataMonAn.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataMonAn.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -191,7 +191,7 @@
             this.btnAddMonAn.FillColor = System.Drawing.Color.LightGray;
             this.btnAddMonAn.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnAddMonAn.ForeColor = System.Drawing.Color.Black;
-            this.btnAddMonAn.Location = new System.Drawing.Point(365, 531);
+            this.btnAddMonAn.Location = new System.Drawing.Point(365, 556);
             this.btnAddMonAn.Name = "btnAddMonAn";
             this.btnAddMonAn.Size = new System.Drawing.Size(114, 35);
             this.btnAddMonAn.TabIndex = 24;
@@ -210,7 +210,7 @@
             this.btnUpdateMonAn.FillColor = System.Drawing.Color.LightGray;
             this.btnUpdateMonAn.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnUpdateMonAn.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateMonAn.Location = new System.Drawing.Point(485, 531);
+            this.btnUpdateMonAn.Location = new System.Drawing.Point(485, 556);
             this.btnUpdateMonAn.Name = "btnUpdateMonAn";
             this.btnUpdateMonAn.Size = new System.Drawing.Size(114, 35);
             this.btnUpdateMonAn.TabIndex = 25;
@@ -229,7 +229,7 @@
             this.btnDelMonAn.FillColor = System.Drawing.Color.LightGray;
             this.btnDelMonAn.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnDelMonAn.ForeColor = System.Drawing.Color.Black;
-            this.btnDelMonAn.Location = new System.Drawing.Point(605, 530);
+            this.btnDelMonAn.Location = new System.Drawing.Point(605, 555);
             this.btnDelMonAn.Name = "btnDelMonAn";
             this.btnDelMonAn.Size = new System.Drawing.Size(114, 35);
             this.btnDelMonAn.TabIndex = 26;
@@ -252,7 +252,7 @@
             "Ten mon an",
             "Gia tien",
             "So luong"});
-            this.cbbSort.Location = new System.Drawing.Point(725, 530);
+            this.cbbSort.Location = new System.Drawing.Point(725, 555);
             this.cbbSort.Name = "cbbSort";
             this.cbbSort.Size = new System.Drawing.Size(225, 36);
             this.cbbSort.TabIndex = 27;
@@ -262,7 +262,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 578);
+            this.ClientSize = new System.Drawing.Size(962, 603);
             this.Controls.Add(this.cbbSort);
             this.Controls.Add(this.btnDelMonAn);
             this.Controls.Add(this.btnUpdateMonAn);
