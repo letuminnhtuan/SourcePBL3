@@ -38,6 +38,7 @@ namespace SourceCode.GUI
         {
             if (this.dataHoaDon.SelectedRows.Count == 1)
             {
+                int a = 1;
                 int MaHoaDon = Convert.ToInt32(this.dataHoaDon.SelectedRows[0].Cells["MaHoaDon"].Value.ToString());
                 fHoaDon f = new fHoaDon(MaHoaDon);
                 f.ShowDialog();
