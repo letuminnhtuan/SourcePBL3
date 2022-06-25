@@ -57,6 +57,14 @@ namespace SourceCode.GUI
                     MessageBox.Show("Không để trống tiền lương!!", "Error!");
                     return;
                 }
+                else
+                {
+                    if (!BLL_ValidateData.Instance.CheckNum(this.txtLuong.Text))
+                    {
+                        MessageBox.Show("Lỗi dữ liệu tiền lương!!", "Error!");
+                        return;
+                    }
+                }
                 if (!BLL_ValidateData.Instance.CheckSDT(this.txtSDT.Text))
                 {
                     MessageBox.Show("Lỗi dữ liệu số điện thoại!!", "Error!");
