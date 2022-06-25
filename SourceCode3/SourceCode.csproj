@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{972316F8-9968-4193-84F8-1F1F115AEFA9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SourceCode</RootNamespace>
+    <AssemblyName>SourceCode</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\PBL3_test\packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BLL_QLDatmon.cs" />
+    <Compile Include="BLL\BLL_QLHoaDon.cs" />
+    <Compile Include="BLL\BLL_QLMA.cs" />
+    <Compile Include="BLL\BLL_QLNV.cs" />
+    <Compile Include="BLL\BLL_ValidateData.cs" />
+    <Compile Include="DAL\CreateDB.cs" />
+    <Compile Include="DAL\tBanAn.cs" />
+    <Compile Include="DAL\tDatMonAn.cs" />
+    <Compile Include="DAL\tHoaDon.cs" />
+    <Compile Include="DAL\tKho.cs" />
+    <Compile Include="DAL\tLoaiMonAn.cs" />
+    <Compile Include="DAL\QLTS.cs" />
+    <Compile Include="DAL\tMonAn.cs" />
+    <Compile Include="DAL\tThanhVien.cs" />
+    <Compile Include="DTO\BanAn.cs" />
+    <Compile Include="DTO\CBBItem.cs" />
+    <Compile Include="DTO\DatMonAn.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
+    <Compile Include="DTO\Kho.cs" />
+    <Compile Include="DTO\LoaiMonAn.cs" />
+    <Compile Include="DTO\MonAn.cs" />
+    <Compile Include="DTO\ThanhVien.cs" />
+    <Compile Include="GUI\fHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fHoaDon.Designer.cs">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fHome.Designer.cs">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fMainAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fMainAdmin.Designer.cs">
+      <DependentUpon>fMainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fMonAn2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fMonAn2.Designer.cs">
+      <DependentUpon>fMonAn2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fMonAn1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fMonAn1.Designer.cs">
+      <DependentUpon>fMonAn1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fNhanVien2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fNhanVien2.Designer.cs">
+      <DependentUpon>fNhanVien2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fNhanVien1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fNhanVien1.Designer.cs">
+      <DependentUpon>fNhanVien1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTaiKhoan.Designer.cs">
+      <DependentUpon>fTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fThongKe.Designer.cs">
+      <DependentUpon>fThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fMainUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fMainUser.Designer.cs">
+      <DependentUpon>fMainUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\fHoaDon.resx">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fHome.resx">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fMainAdmin.resx">
+      <DependentUpon>fMainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fMonAn2.resx">
+      <DependentUpon>fMonAn2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fMonAn1.resx">
+      <DependentUpon>fMonAn1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fNhanVien2.resx">
+      <DependentUpon>fNhanVien2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fNhanVien1.resx">
+      <DependentUpon>fNhanVien1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fTaiKhoan.resx">
+      <DependentUpon>fTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fThongKe.resx">
+      <DependentUpon>fThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fMainUser.resx">
+      <DependentUpon>fMainUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
