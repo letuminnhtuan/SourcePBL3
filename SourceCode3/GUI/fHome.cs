@@ -84,7 +84,9 @@ namespace SourceCode.GUI
                     string TenMonAn = BLL_QLMA.Instance.GetMonAnByMaMonAn(i.MaMonAn).TenMonAn;
                     this.dataDatMon.Rows.Add(TenMonAn, i.SoLuong, string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", i.TongTien));
                 }
+                this.dataDatMon.Enabled = false;
             }
+            else this.dataDatMon.Enabled = true;
         }
         private void btnConfirm_Click(object sender, EventArgs e)
         {
