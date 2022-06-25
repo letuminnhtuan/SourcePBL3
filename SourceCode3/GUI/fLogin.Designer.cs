@@ -209,10 +209,10 @@ namespace SourceCode.GUI
             // 
             this.lbTimer.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbTimer.AutoSize = true;
-            this.lbTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTimer.Location = new System.Drawing.Point(525, 224);
+            this.lbTimer.Font = new System.Drawing.Font("DS-Digital", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTimer.Location = new System.Drawing.Point(540, 204);
             this.lbTimer.Name = "lbTimer";
-            this.lbTimer.Size = new System.Drawing.Size(158, 73);
+            this.lbTimer.Size = new System.Drawing.Size(134, 63);
             this.lbTimer.TabIndex = 18;
             this.lbTimer.Text = "4:44";
             // 
@@ -225,10 +225,10 @@ namespace SourceCode.GUI
             // 
             this.lbTimer2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbTimer2.AutoSize = true;
-            this.lbTimer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTimer2.Location = new System.Drawing.Point(511, 306);
+            this.lbTimer2.Font = new System.Drawing.Font("DS-Digital", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTimer2.Location = new System.Drawing.Point(474, 306);
             this.lbTimer2.Name = "lbTimer2";
-            this.lbTimer2.Size = new System.Drawing.Size(189, 39);
+            this.lbTimer2.Size = new System.Drawing.Size(256, 47);
             this.lbTimer2.TabIndex = 19;
             this.lbTimer2.Text = "25/06/2022";
             // 
@@ -300,6 +300,7 @@ namespace SourceCode.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fLogin";
             this.Text = "fLogin";
+            this.Load += new System.EventHandler(this.fLogin_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
