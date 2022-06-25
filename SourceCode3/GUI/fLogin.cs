@@ -16,20 +16,8 @@ namespace SourceCode.GUI
         public fLogin()
         {
             this.StartPosition = FormStartPosition.CenterScreen;
-            
             InitializeComponent();
         }
-        //github
-        //private const int CS_DropShadow = 0x00020000;
-        //protected override CreateParams CreateParams
-        //{
-        //    get
-        //    {
-        //        CreateParams cp = base.CreateParams;
-        //        cp.ClassStyle = CS_DropShadow;
-        //        return cp;
-        //    }
-        //}
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string username = this.txtUser.Text;
@@ -56,13 +44,6 @@ namespace SourceCode.GUI
             }
         }
 
-        private void btnOut_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn có muốn thoát?", "Thoát", MessageBoxButtons.OKCancel, MessageBoxIcon.None, MessageBoxDefaultButton.Button2) == DialogResult.OK)
-            {
-                this.Dispose();
-            }
-        }
         private void checkMK_CheckedChanged(object sender, EventArgs e)
         {
             //this.txtPass.UseSystemPasswordChar = !this.txtPass.UseSystemPasswordChar;
