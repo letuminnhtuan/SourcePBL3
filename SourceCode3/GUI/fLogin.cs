@@ -19,6 +19,7 @@ namespace SourceCode.GUI
             
             InitializeComponent();
         }
+        //github
         //private const int CS_DropShadow = 0x00020000;
         //protected override CreateParams CreateParams
         //{
