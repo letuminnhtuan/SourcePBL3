@@ -208,10 +208,11 @@
             // guna2ControlBox3
             // 
             this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox3.BorderRadius = 2;
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.SkyBlue;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1048, 0);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(1050, 0);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(40, 25);
             this.guna2ControlBox3.TabIndex = 25;
@@ -219,10 +220,11 @@
             // guna2ControlBox2
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.BorderRadius = 2;
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.SkyBlue;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1089, 0);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1090, 0);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(40, 25);
             this.guna2ControlBox2.TabIndex = 24;
@@ -230,6 +232,7 @@
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.BorderRadius = 2;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.SkyBlue;
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
