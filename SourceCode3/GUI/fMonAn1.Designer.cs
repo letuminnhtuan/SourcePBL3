@@ -240,6 +240,10 @@
             this.cbbSort.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbbSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbbSort.ItemHeight = 30;
+            this.cbbSort.Items.AddRange(new object[] {
+            "Ten mon an",
+            "Gia tien",
+            "So luong"});
             this.cbbSort.Location = new System.Drawing.Point(725, 574);
             this.cbbSort.Name = "cbbSort";
             this.cbbSort.Size = new System.Drawing.Size(225, 36);

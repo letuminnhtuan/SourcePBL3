@@ -241,6 +241,10 @@
             this.cbbSortNV.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbbSortNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbbSortNV.ItemHeight = 30;
+            this.cbbSortNV.Items.AddRange(new object[] {
+            "Ten nhan vien",
+            "Luong",
+            "Ngay lam viec"});
             this.cbbSortNV.Location = new System.Drawing.Point(748, 568);
             this.cbbSortNV.Name = "cbbSortNV";
             this.cbbSortNV.Size = new System.Drawing.Size(202, 36);

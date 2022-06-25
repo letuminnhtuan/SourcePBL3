@@ -90,32 +90,36 @@ namespace SourceCode.GUI
         }
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            DatMonAn data = new DatMonAn
+            if (this.cbbMonAn.SelectedIndex >= 0)
             {
-                MaMonAn = ((CBBItem)this.cbbMonAn.SelectedItem).Key,
-                SoLuong = Convert.ToInt32(this.numMon.Value),
-            };
-            data.TongTien = BLL_QLMA.Instance.GetMonAnByMaMonAn(data.MaMonAn).GiaTien * data.SoLuong;
-            if (Check(data.MaMonAn) && data.SoLuong != 0) temp.Add(data);
-            else if (data.SoLuong != 0)
-            {
-                for (int i = 0; i < temp.Count; i++)
+                DatMonAn data = new DatMonAn
                 {
-                    if (temp[i].MaMonAn.Equals(data.MaMonAn))
+                    MaMonAn = ((CBBItem)this.cbbMonAn.SelectedItem).Key,
+                    SoLuong = Convert.ToInt32(this.numMon.Value),
+                };
+                data.TongTien = BLL_QLMA.Instance.GetMonAnByMaMonAn(data.MaMonAn).GiaTien * data.SoLuong;
+                if (Check(data.MaMonAn) && data.SoLuong != 0) temp.Add(data);
+                else if (data.SoLuong != 0)
+                {
+                    for (int i = 0; i < temp.Count; i++)
                     {
-                        temp[i].SoLuong += data.SoLuong;
-                        temp[i].TongTien += data.TongTien;
-                        break;
+                        if (temp[i].MaMonAn.Equals(data.MaMonAn))
+                        {
+                            temp[i].SoLuong += data.SoLuong;
+                            temp[i].TongTien += data.TongTien;
+                            break;
+                        }
                     }
                 }
+                LoadDSDatMon();
+                decimal Tong = 0;
+                foreach (DatMonAn i in temp)
+                {
+                    Tong += i.TongTien;
+                }
+                this.txtTien.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", Tong);
             }
-            LoadDSDatMon();
-            decimal Tong = 0;
-            foreach (DatMonAn i in temp)
-            {
-                Tong += i.TongTien;
-            }
-            this.txtTien.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", Tong);
+            else MessageBox.Show("Chọn món ăn cần đặt!", "Error!!");
         }
         private bool Check(string MaMonAn)
         {
