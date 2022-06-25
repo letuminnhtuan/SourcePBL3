@@ -90,6 +90,8 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Controls.Add(this.guna2Button1);
             this.flowLayoutPanel1.Controls.Add(this.guna2Button2);
             this.flowLayoutPanel1.Controls.Add(this.guna2Button3);
@@ -114,7 +116,7 @@
             this.flowLayoutPanel1.Controls.Add(this.guna2Button22);
             this.flowLayoutPanel1.Controls.Add(this.guna2Button23);
             this.flowLayoutPanel1.Controls.Add(this.guna2Button24);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 35);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(11, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(390, 578);
             this.flowLayoutPanel1.TabIndex = 6;
@@ -553,6 +555,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.btnConfirm);
             this.panel2.Controls.Add(this.numMon);
             this.panel2.Controls.Add(this.cbbMonAn);
@@ -560,7 +563,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(407, 38);
+            this.panel2.Location = new System.Drawing.Point(407, 12);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(544, 136);
@@ -568,7 +571,7 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.BorderRadius = 8;
+            this.btnConfirm.BorderRadius = 16;
             this.btnConfirm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnConfirm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnConfirm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -576,7 +579,7 @@
             this.btnConfirm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
             this.btnConfirm.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnConfirm.ForeColor = System.Drawing.Color.White;
-            this.btnConfirm.Location = new System.Drawing.Point(392, 91);
+            this.btnConfirm.Location = new System.Drawing.Point(392, 87);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(149, 35);
             this.btnConfirm.TabIndex = 12;
@@ -590,7 +593,7 @@
             this.numMon.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numMon.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numMon.ForeColor = System.Drawing.Color.Black;
-            this.numMon.Location = new System.Drawing.Point(172, 87);
+            this.numMon.Location = new System.Drawing.Point(172, 88);
             this.numMon.Name = "numMon";
             this.numMon.Size = new System.Drawing.Size(73, 34);
             this.numMon.TabIndex = 4;
@@ -665,7 +668,8 @@
             // 
             // btnHoanThanh
             // 
-            this.btnHoanThanh.BorderRadius = 8;
+            this.btnHoanThanh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHoanThanh.BorderRadius = 16;
             this.btnHoanThanh.BorderThickness = 1;
             this.btnHoanThanh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnHoanThanh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -674,7 +678,7 @@
             this.btnHoanThanh.FillColor = System.Drawing.Color.LightGray;
             this.btnHoanThanh.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnHoanThanh.ForeColor = System.Drawing.Color.Black;
-            this.btnHoanThanh.Location = new System.Drawing.Point(407, 579);
+            this.btnHoanThanh.Location = new System.Drawing.Point(407, 531);
             this.btnHoanThanh.Name = "btnHoanThanh";
             this.btnHoanThanh.Size = new System.Drawing.Size(114, 35);
             this.btnHoanThanh.TabIndex = 15;
@@ -683,16 +687,17 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.BorderRadius = 8;
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.BorderRadius = 16;
             this.btnCancel.BorderThickness = 1;
             this.btnCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCancel.FillColor = System.Drawing.Color.LightGray;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(527, 578);
+            this.btnCancel.Location = new System.Drawing.Point(527, 530);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(113, 35);
             this.btnCancel.TabIndex = 16;
@@ -701,16 +706,17 @@
             // 
             // btnOrder
             // 
-            this.btnOrder.BorderRadius = 8;
+            this.btnOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOrder.BorderRadius = 16;
             this.btnOrder.BorderThickness = 1;
             this.btnOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnOrder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnOrder.FillColor = System.Drawing.Color.LightGray;
-            this.btnOrder.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnOrder.ForeColor = System.Drawing.Color.Black;
-            this.btnOrder.Location = new System.Drawing.Point(646, 578);
+            this.btnOrder.Location = new System.Drawing.Point(646, 530);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(114, 35);
             this.btnOrder.TabIndex = 17;
@@ -719,6 +725,7 @@
             // 
             // cbbThanhToan
             // 
+            this.cbbThanhToan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbThanhToan.BackColor = System.Drawing.Color.Transparent;
             this.cbbThanhToan.BorderRadius = 8;
             this.cbbThanhToan.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -731,7 +738,7 @@
             this.cbbThanhToan.Items.AddRange(new object[] {
             "Truc tiep",
             "Chuyen khoan"});
-            this.cbbThanhToan.Location = new System.Drawing.Point(766, 578);
+            this.cbbThanhToan.Location = new System.Drawing.Point(766, 530);
             this.cbbThanhToan.Name = "cbbThanhToan";
             this.cbbThanhToan.Size = new System.Drawing.Size(185, 36);
             this.cbbThanhToan.TabIndex = 13;
@@ -740,7 +747,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(332, 363);
+            this.label5.Location = new System.Drawing.Point(332, 341);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 21);
@@ -762,7 +769,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(232, 16);
+            this.label6.Location = new System.Drawing.Point(242, 16);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 17);
@@ -799,7 +806,7 @@
             this.dateTimePicker1.FillColor = System.Drawing.Color.White;
             this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateTimePicker1.Location = new System.Drawing.Point(349, 11);
+            this.dateTimePicker1.Location = new System.Drawing.Point(359, 11);
             this.dateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
@@ -841,7 +848,7 @@
             this.dataDatMon.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataDatMon.EnableHeadersVisualStyles = false;
             this.dataDatMon.GridColor = System.Drawing.Color.LightGray;
-            this.dataDatMon.Location = new System.Drawing.Point(5, 56);
+            this.dataDatMon.Location = new System.Drawing.Point(1, 52);
             this.dataDatMon.Name = "dataDatMon";
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
@@ -853,8 +860,8 @@
             this.dataDatMon.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataDatMon.RowHeadersVisible = false;
             this.dataDatMon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataDatMon.Size = new System.Drawing.Size(536, 301);
-            this.dataDatMon.TabIndex = 11;
+            this.dataDatMon.Size = new System.Drawing.Size(540, 283);
+            this.dataDatMon.TabIndex = 13;
             this.dataDatMon.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataDatMon.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dataDatMon.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -924,7 +931,7 @@
             this.txtTien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTien.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTien.Location = new System.Drawing.Point(417, 363);
+            this.txtTien.Location = new System.Drawing.Point(417, 341);
             this.txtTien.Name = "txtTien";
             this.txtTien.PasswordChar = '\0';
             this.txtTien.PlaceholderText = "";
@@ -934,24 +941,25 @@
             // 
             // pnlBill
             // 
-            this.pnlBill.Controls.Add(this.txtTien);
+            this.pnlBill.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlBill.Controls.Add(this.dataDatMon);
+            this.pnlBill.Controls.Add(this.txtTien);
             this.pnlBill.Controls.Add(this.dateTimePicker1);
             this.pnlBill.Controls.Add(this.txtThe);
             this.pnlBill.Controls.Add(this.label6);
             this.pnlBill.Controls.Add(this.label4);
             this.pnlBill.Controls.Add(this.label5);
-            this.pnlBill.Location = new System.Drawing.Point(407, 178);
+            this.pnlBill.Location = new System.Drawing.Point(407, 152);
             this.pnlBill.Margin = new System.Windows.Forms.Padding(2);
             this.pnlBill.Name = "pnlBill";
-            this.pnlBill.Size = new System.Drawing.Size(544, 395);
+            this.pnlBill.Size = new System.Drawing.Size(544, 373);
             this.pnlBill.TabIndex = 9;
             // 
             // fHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 642);
+            this.ClientSize = new System.Drawing.Size(962, 578);
             this.Controls.Add(this.cbbThanhToan);
             this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.btnCancel);
@@ -1008,7 +1016,6 @@
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2TextBox txtThe;
         private Guna.UI2.WinForms.Guna2DateTimePicker dateTimePicker1;
-        private Guna.UI2.WinForms.Guna2DataGridView dataDatMon;
         private Guna.UI2.WinForms.Guna2TextBox txtTien;
         private System.Windows.Forms.Panel pnlBill;
         private Guna.UI2.WinForms.Guna2Button guna2Button17;
@@ -1019,6 +1026,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button22;
         private Guna.UI2.WinForms.Guna2Button guna2Button23;
         private Guna.UI2.WinForms.Guna2Button guna2Button24;
+        private Guna.UI2.WinForms.Guna2DataGridView dataDatMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

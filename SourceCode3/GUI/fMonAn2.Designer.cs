@@ -212,7 +212,7 @@ namespace SourceCode.GUI
             // 
             // btnOK
             // 
-            this.btnOK.BorderRadius = 8;
+            this.btnOK.BorderRadius = 16;
             this.btnOK.BorderThickness = 1;
             this.btnOK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnOK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -230,7 +230,7 @@ namespace SourceCode.GUI
             // 
             // btnCancel
             // 
-            this.btnCancel.BorderRadius = 8;
+            this.btnCancel.BorderRadius = 16;
             this.btnCancel.BorderThickness = 1;
             this.btnCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
