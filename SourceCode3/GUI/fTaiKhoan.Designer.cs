@@ -48,6 +48,7 @@
             // 
             // label
             // 
+            this.label.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.Location = new System.Drawing.Point(441, 398);
@@ -58,6 +59,7 @@
             // 
             // CheckMK
             // 
+            this.CheckMK.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.CheckMK.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CheckMK.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CheckMK.CheckedState.InnerBorderColor = System.Drawing.Color.White;
@@ -75,6 +77,7 @@
             // 
             // dateLamViec
             // 
+            this.dateLamViec.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dateLamViec.BorderRadius = 8;
             this.dateLamViec.BorderThickness = 1;
             this.dateLamViec.Checked = true;
@@ -92,6 +95,7 @@
             // 
             // txtTK
             // 
+            this.txtTK.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtTK.Animated = true;
             this.txtTK.BorderRadius = 8;
             this.txtTK.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -114,6 +118,7 @@
             // 
             // txtMK
             // 
+            this.txtMK.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtMK.Animated = true;
             this.txtMK.BorderRadius = 8;
             this.txtMK.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -135,6 +140,7 @@
             // 
             // txtSDT
             // 
+            this.txtSDT.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtSDT.Animated = true;
             this.txtSDT.BorderRadius = 8;
             this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -157,6 +163,7 @@
             // 
             // txtLuong
             // 
+            this.txtLuong.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtLuong.Animated = true;
             this.txtLuong.BorderRadius = 8;
             this.txtLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -179,6 +186,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(310, 352);
@@ -190,6 +198,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(330, 228);
@@ -201,6 +210,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(286, 448);
@@ -212,6 +222,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(315, 291);
@@ -223,6 +234,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(286, 168);
@@ -234,6 +246,7 @@
             // 
             // txtTenNhanVien
             // 
+            this.txtTenNhanVien.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtTenNhanVien.Animated = true;
             this.txtTenNhanVien.BorderRadius = 8;
             this.txtTenNhanVien.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -256,6 +269,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(284, 109);
@@ -267,6 +281,7 @@
             // 
             // cbbLoaiNhanVien
             // 
+            this.cbbLoaiNhanVien.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cbbLoaiNhanVien.BackColor = System.Drawing.Color.Transparent;
             this.cbbLoaiNhanVien.BorderRadius = 8;
             this.cbbLoaiNhanVien.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -284,6 +299,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(279, 50);

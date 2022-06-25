@@ -98,3 +98,4 @@ D:\NgHoangQuan\Code_test\PBL3\PBL3-master\PBL3_test\SourcePBL3\SourceCode3\obj\D
 D:\NgHoangQuan\Code_test\PBL3\PBL3-master\PBL3_test\SourcePBL3\SourceCode3\obj\Debug\SourceCode.csproj.CopyComplete
 D:\NgHoangQuan\Code_test\PBL3\PBL3-master\PBL3_test\SourcePBL3\SourceCode3\obj\Debug\SourceCode.exe
 D:\NgHoangQuan\Code_test\PBL3\PBL3-master\PBL3_test\SourcePBL3\SourceCode3\obj\Debug\SourceCode.pdb
+D:\NgHoangQuan\Code_test\PBL3\PBL3-master\PBL3_test\SourcePBL3\SourceCode3\bin\Debug\Guna.UI2.dll

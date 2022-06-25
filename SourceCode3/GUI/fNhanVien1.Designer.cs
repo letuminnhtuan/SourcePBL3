@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cbbLoaiNV = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchNV = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,6 +46,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 21);
@@ -56,6 +57,7 @@
             // 
             // cbbLoaiNV
             // 
+            this.cbbLoaiNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbbLoaiNV.BackColor = System.Drawing.Color.Transparent;
             this.cbbLoaiNV.BorderRadius = 8;
             this.cbbLoaiNV.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -73,6 +75,7 @@
             // 
             // txtSearchNV
             // 
+            this.txtSearchNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSearchNV.Animated = true;
             this.txtSearchNV.BorderRadius = 8;
             this.txtSearchNV.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -96,15 +99,15 @@
             // 
             // btnSearchNV
             // 
-            this.btnSearchNV.BorderRadius = 8;
-            this.btnSearchNV.BorderThickness = 1;
+            this.btnSearchNV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSearchNV.BorderRadius = 16;
             this.btnSearchNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSearchNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearchNV.FillColor = System.Drawing.Color.LightGray;
+            this.btnSearchNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
             this.btnSearchNV.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.btnSearchNV.ForeColor = System.Drawing.Color.Black;
+            this.btnSearchNV.ForeColor = System.Drawing.Color.White;
             this.btnSearchNV.Location = new System.Drawing.Point(836, 12);
             this.btnSearchNV.Name = "btnSearchNV";
             this.btnSearchNV.Size = new System.Drawing.Size(114, 35);
@@ -114,42 +117,45 @@
             // 
             // dataNV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataNV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.dataNV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataNV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataNV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataNV.BackgroundColor = System.Drawing.Color.White;
             this.dataNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataNV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataNV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataNV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataNV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataNV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataNV.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataNV.EnableHeadersVisualStyles = false;
             this.dataNV.GridColor = System.Drawing.Color.LightGray;
             this.dataNV.Location = new System.Drawing.Point(15, 53);
             this.dataNV.Name = "dataNV";
             this.dataNV.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataNV.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataNV.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataNV.RowHeadersVisible = false;
             this.dataNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataNV.Size = new System.Drawing.Size(935, 509);
@@ -178,7 +184,9 @@
             // 
             // btnDelNV
             // 
-            this.btnDelNV.BorderRadius = 8;
+            this.btnDelNV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnDelNV.AutoRoundedCorners = true;
+            this.btnDelNV.BorderRadius = 16;
             this.btnDelNV.BorderThickness = 1;
             this.btnDelNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDelNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -196,7 +204,9 @@
             // 
             // btnUpdateNV
             // 
-            this.btnUpdateNV.BorderRadius = 8;
+            this.btnUpdateNV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnUpdateNV.AutoRoundedCorners = true;
+            this.btnUpdateNV.BorderRadius = 16;
             this.btnUpdateNV.BorderThickness = 1;
             this.btnUpdateNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUpdateNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -214,7 +224,10 @@
             // 
             // btnAddNV
             // 
-            this.btnAddNV.BorderRadius = 8;
+            this.btnAddNV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAddNV.AutoRoundedCorners = true;
+            this.btnAddNV.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddNV.BorderRadius = 16;
             this.btnAddNV.BorderThickness = 1;
             this.btnAddNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -232,6 +245,7 @@
             // 
             // cbbSortNV
             // 
+            this.cbbSortNV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cbbSortNV.BackColor = System.Drawing.Color.Transparent;
             this.cbbSortNV.BorderRadius = 8;
             this.cbbSortNV.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;

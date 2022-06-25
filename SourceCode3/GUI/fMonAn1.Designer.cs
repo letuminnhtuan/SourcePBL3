@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label3 = new System.Windows.Forms.Label();
             this.cbbLoaiMonAn = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSearchMA = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,6 +46,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
@@ -57,6 +58,7 @@
             // 
             // cbbLoaiMonAn
             // 
+            this.cbbLoaiMonAn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbbLoaiMonAn.BackColor = System.Drawing.Color.Transparent;
             this.cbbLoaiMonAn.BorderRadius = 8;
             this.cbbLoaiMonAn.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -74,6 +76,7 @@
             // 
             // txtSearchMA
             // 
+            this.txtSearchMA.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSearchMA.Animated = true;
             this.txtSearchMA.BorderRadius = 8;
             this.txtSearchMA.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -95,15 +98,16 @@
             // 
             // btnSearchMonAn
             // 
-            this.btnSearchMonAn.BorderRadius = 8;
-            this.btnSearchMonAn.BorderThickness = 1;
+            this.btnSearchMonAn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSearchMonAn.AutoRoundedCorners = true;
+            this.btnSearchMonAn.BorderRadius = 16;
             this.btnSearchMonAn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchMonAn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchMonAn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSearchMonAn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearchMonAn.FillColor = System.Drawing.Color.LightGray;
+            this.btnSearchMonAn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
             this.btnSearchMonAn.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.btnSearchMonAn.ForeColor = System.Drawing.Color.Black;
+            this.btnSearchMonAn.ForeColor = System.Drawing.Color.White;
             this.btnSearchMonAn.Location = new System.Drawing.Point(835, 13);
             this.btnSearchMonAn.Name = "btnSearchMonAn";
             this.btnSearchMonAn.Size = new System.Drawing.Size(114, 35);
@@ -113,42 +117,45 @@
             // 
             // dataMonAn
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataMonAn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dataMonAn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.dataMonAn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataMonAn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataMonAn.BackgroundColor = System.Drawing.Color.White;
             this.dataMonAn.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataMonAn.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataMonAn.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataMonAn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataMonAn.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataMonAn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataMonAn.DefaultCellStyle = dataGridViewCellStyle15;
             this.dataMonAn.EnableHeadersVisualStyles = false;
             this.dataMonAn.GridColor = System.Drawing.Color.LightGray;
             this.dataMonAn.Location = new System.Drawing.Point(16, 57);
             this.dataMonAn.Name = "dataMonAn";
             this.dataMonAn.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataMonAn.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataMonAn.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dataMonAn.RowHeadersVisible = false;
             this.dataMonAn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataMonAn.Size = new System.Drawing.Size(934, 511);
@@ -177,7 +184,8 @@
             // 
             // btnAddMonAn
             // 
-            this.btnAddMonAn.BorderRadius = 8;
+            this.btnAddMonAn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAddMonAn.BorderRadius = 16;
             this.btnAddMonAn.BorderThickness = 1;
             this.btnAddMonAn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddMonAn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -195,7 +203,8 @@
             // 
             // btnUpdateMonAn
             // 
-            this.btnUpdateMonAn.BorderRadius = 8;
+            this.btnUpdateMonAn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnUpdateMonAn.BorderRadius = 16;
             this.btnUpdateMonAn.BorderThickness = 1;
             this.btnUpdateMonAn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUpdateMonAn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -213,7 +222,8 @@
             // 
             // btnDelMonAn
             // 
-            this.btnDelMonAn.BorderRadius = 8;
+            this.btnDelMonAn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnDelMonAn.BorderRadius = 16;
             this.btnDelMonAn.BorderThickness = 1;
             this.btnDelMonAn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDelMonAn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -231,6 +241,7 @@
             // 
             // cbbSort
             // 
+            this.cbbSort.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cbbSort.BackColor = System.Drawing.Color.Transparent;
             this.cbbSort.BorderRadius = 8;
             this.cbbSort.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;

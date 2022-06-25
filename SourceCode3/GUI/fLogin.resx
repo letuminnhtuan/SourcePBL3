@@ -585,7 +585,7 @@
   <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlIAAAE8CAYAAAALyV/EAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAASPNJREFUeF7tnQmYXVWZrhGe7ntvX0WhZRYSb4stUyE2g0AVKtoGSbgC4jUmIEMb
+        vAAADrwBlbxySQAASPNJREFUeF7tnQmYXVWZrhGe7ntvX0WhZRYSb4stUyE2g0AVKtoGSbgC4jUmIEMb
         JTKJDJUEW7oFEgFl0gyADDYgk6AkDAmDEgRiGEKQyQnCTBiS1FypJOj9v8W/Tq/atc9UOVV1irzv8/zP
         OWfNa+291/rO2muvvR4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -899,4 +899,16 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAKC+WW+9/w/Vqg/IXP/ZYwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>140, 17</value>
+  </metadata>
+  <metadata name="guna2DragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>230, 16</value>
+  </metadata>
+  <metadata name="guna2ShadowForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>385, 16</value>
+  </metadata>
+  <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>12, 13</value>
+  </metadata>
 </root>

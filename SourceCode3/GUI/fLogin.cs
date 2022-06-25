@@ -69,5 +69,15 @@ namespace SourceCode.GUI
             txtPass.PasswordChar = CheckMK.Checked ?  '\0' : '●';
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbTimer.Text = DateTime.Now.ToString("HH:mm");
+            lbTimer2.Text = DateTime.Now.ToString("dd/MM/yyy");
+        }
+
+        private void fLogin_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
     }
 }
