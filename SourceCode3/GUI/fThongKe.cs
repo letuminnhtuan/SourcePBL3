@@ -18,8 +18,10 @@ namespace SourceCode.GUI
         public fThongKe()
         {
             InitializeComponent();
+            decimal TongTien = 0;
+            this.dataHoaDon.DataSource = BLL_QLHoaDon.Instance.GetAllHoaDon(ref TongTien);
+            this.txtTongTien.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", TongTien);
         }
-
         private void btnThK_Click(object sender, EventArgs e)
         {
             if (this.dateStart.Value.CompareTo(this.dateEnd.Value) != 1)
