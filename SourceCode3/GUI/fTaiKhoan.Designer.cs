@@ -50,7 +50,7 @@
             // 
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(441, 398);
+            this.label.Location = new System.Drawing.Point(435, 426);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(103, 15);
             this.label.TabIndex = 69;
@@ -62,7 +62,7 @@
             this.CheckMK.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CheckMK.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.CheckMK.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.CheckMK.Location = new System.Drawing.Point(400, 398);
+            this.CheckMK.Location = new System.Drawing.Point(394, 426);
             this.CheckMK.Name = "CheckMK";
             this.CheckMK.Size = new System.Drawing.Size(35, 20);
             this.CheckMK.TabIndex = 68;
@@ -82,7 +82,7 @@
             this.dateLamViec.FillColor = System.Drawing.Color.White;
             this.dateLamViec.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dateLamViec.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateLamViec.Location = new System.Drawing.Point(402, 448);
+            this.dateLamViec.Location = new System.Drawing.Point(396, 476);
             this.dateLamViec.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateLamViec.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateLamViec.Name = "dateLamViec";
@@ -104,7 +104,7 @@
             this.txtTK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTK.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTK.Location = new System.Drawing.Point(397, 286);
+            this.txtTK.Location = new System.Drawing.Point(391, 314);
             this.txtTK.Name = "txtTK";
             this.txtTK.PasswordChar = '\0';
             this.txtTK.PlaceholderText = "";
@@ -125,7 +125,7 @@
             this.txtMK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMK.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMK.Location = new System.Drawing.Point(397, 347);
+            this.txtMK.Location = new System.Drawing.Point(391, 375);
             this.txtMK.Name = "txtMK";
             this.txtMK.PasswordChar = '●';
             this.txtMK.PlaceholderText = "";
@@ -147,7 +147,7 @@
             this.txtSDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSDT.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSDT.Location = new System.Drawing.Point(397, 160);
+            this.txtSDT.Location = new System.Drawing.Point(391, 188);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.PasswordChar = '\0';
             this.txtSDT.PlaceholderText = "";
@@ -169,7 +169,7 @@
             this.txtLuong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLuong.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLuong.Location = new System.Drawing.Point(397, 222);
+            this.txtLuong.Location = new System.Drawing.Point(391, 250);
             this.txtLuong.Name = "txtLuong";
             this.txtLuong.PasswordChar = '\0';
             this.txtLuong.PlaceholderText = "";
@@ -181,7 +181,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(310, 352);
+            this.label5.Location = new System.Drawing.Point(304, 380);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 21);
@@ -192,7 +192,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(330, 228);
+            this.label6.Location = new System.Drawing.Point(324, 256);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 21);
@@ -203,7 +203,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(286, 448);
+            this.label7.Location = new System.Drawing.Point(280, 476);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 21);
@@ -214,7 +214,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(315, 291);
+            this.label3.Location = new System.Drawing.Point(309, 319);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 21);
@@ -225,7 +225,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(286, 168);
+            this.label4.Location = new System.Drawing.Point(280, 196);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 21);
@@ -246,7 +246,7 @@
             this.txtTenNhanVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTenNhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenNhanVien.Location = new System.Drawing.Point(397, 99);
+            this.txtTenNhanVien.Location = new System.Drawing.Point(391, 127);
             this.txtTenNhanVien.Name = "txtTenNhanVien";
             this.txtTenNhanVien.PasswordChar = '\0';
             this.txtTenNhanVien.PlaceholderText = "";
@@ -258,7 +258,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(284, 109);
+            this.label2.Location = new System.Drawing.Point(278, 137);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 21);
@@ -277,7 +277,7 @@
             this.cbbLoaiNhanVien.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbbLoaiNhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbbLoaiNhanVien.ItemHeight = 30;
-            this.cbbLoaiNhanVien.Location = new System.Drawing.Point(397, 40);
+            this.cbbLoaiNhanVien.Location = new System.Drawing.Point(391, 68);
             this.cbbLoaiNhanVien.Name = "cbbLoaiNhanVien";
             this.cbbLoaiNhanVien.Size = new System.Drawing.Size(225, 36);
             this.cbbLoaiNhanVien.TabIndex = 55;
@@ -286,7 +286,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(279, 50);
+            this.label8.Location = new System.Drawing.Point(273, 78);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 21);
@@ -297,7 +297,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 516);
+            this.ClientSize = new System.Drawing.Size(962, 642);
             this.Controls.Add(this.label);
             this.Controls.Add(this.CheckMK);
             this.Controls.Add(this.dateLamViec);

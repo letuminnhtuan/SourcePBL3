@@ -50,26 +50,44 @@ namespace SourceCode.GUI
         }
         private void btnOK_Click(object sender, EventArgs e)
         {
-            ThanhVien data = new ThanhVien
+            if (this.cbbLoaiNhanVien.SelectedIndex >= 0)
             {
-                TenDangNhap = this.txtTK.Text,
-                MatKhau = this.txtMK.Text,
-                LoaiThanhVien = ((CBBItem)this.cbbLoaiNhanVien.SelectedItem).Key,
-                TenThanhVien = this.txtTenNhanVien.Text,
-                Luong = Convert.ToDecimal(this.txtLuong.Text),
-                SDT = this.txtSDT.Text,
-                NgayLamViec = this.dateLamViec.Value,
-            };
-            if (this.txtTK.Enabled) // => ADD
-            {
-                if (BLL_QLNV.Instance.GetThanhVienByTenDangNhap(data.TenDangNhap) != null)
+                if(this.txtLuong.Text == "")
                 {
-                    MessageBox.Show("Nhân viên đã tồn tại!", "Tồn tại", MessageBoxButtons.OKCancel, MessageBoxIcon.Error, MessageBoxDefaultButton.Button2);
+                    MessageBox.Show("Không để trống tiền lương!!", "Error!");
                     return;
                 }
+                if (!BLL_ValidateData.Instance.CheckSDT(this.txtSDT.Text))
+                {
+                    MessageBox.Show("Lỗi dữ liệu số điện thoại!!", "Error!");
+                    return;
+                }
+                ThanhVien data = new ThanhVien
+                {
+                    TenDangNhap = this.txtTK.Text,
+                    MatKhau = this.txtMK.Text,
+                    LoaiThanhVien = ((CBBItem)this.cbbLoaiNhanVien.SelectedItem).Key,
+                    TenThanhVien = this.txtTenNhanVien.Text,
+                    Luong = Convert.ToDecimal(this.txtLuong.Text),
+                    SDT = this.txtSDT.Text,
+                    NgayLamViec = this.dateLamViec.Value,
+                };
+                if (BLL_ValidateData.Instance.ChechNhanVien(data) != "") MessageBox.Show(BLL_ValidateData.Instance.ChechNhanVien(data), "Error!!");
+                else
+                {
+                    if (this.txtTK.Enabled) // => ADD
+                    {
+                        if (BLL_QLNV.Instance.GetThanhVienByTenDangNhap(data.TenDangNhap) != null)
+                        {
+                            MessageBox.Show("Nhân viên đã tồn tại!", "Tồn tại", MessageBoxButtons.OKCancel, MessageBoxIcon.Error, MessageBoxDefaultButton.Button2);
+                            return;
+                        }
+                    }
+                    BLL_QLNV.Instance.AddUpdateThanhVien(data);
+                    D();
+                }
             }
-            BLL_QLNV.Instance.AddUpdateThanhVien(data);
-            D();
+            else MessageBox.Show("Chọn loại nhân viên!!", "Error!!");
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {

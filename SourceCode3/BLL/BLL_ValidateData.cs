@@ -39,5 +39,23 @@ namespace SourceCode.BLL
             }
             return true;
         }
+        public string ChechNhanVien(ThanhVien data)
+        {
+            string mess = "";
+            if (data.TenDangNhap == "") mess += "Không để trống tên đăng nhập\n";
+            if (data.MatKhau == "") mess += "Không để trống mật khẩu\n";
+            if (data.TenThanhVien == "") mess += "Không để trống tên thành viên\n";
+            if (data.SDT == "") mess += "Không để trống số điện thoại\n";
+            return mess;
+        }
+        public bool CheckSDT(string txt)
+        {
+            if (!txt.StartsWith("0") || txt.Length != 10) return false;
+            foreach (char i in txt.ToArray())
+            {
+                if (i > '9' || i < '0') return false;
+            }
+            return true;
+        }
     }
 }
