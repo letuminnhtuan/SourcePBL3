@@ -107,7 +107,6 @@ namespace SourceCode.GUI
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             txtMK.PasswordChar = CheckMK.Checked ? '\0' : '●';
-            int a = 0;
         }
     }
 }
