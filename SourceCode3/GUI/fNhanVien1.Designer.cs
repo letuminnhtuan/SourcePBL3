@@ -119,6 +119,7 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dataNV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataNV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataNV.BackgroundColor = System.Drawing.Color.White;
             this.dataNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
