@@ -49,9 +49,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 22);
+            this.label1.Location = new System.Drawing.Point(15, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 17);
+            this.label1.Size = new System.Drawing.Size(122, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Loại nhân viên";
             // 
@@ -67,9 +68,10 @@
             this.cbbLoaiNV.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbbLoaiNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbbLoaiNV.ItemHeight = 30;
-            this.cbbLoaiNV.Location = new System.Drawing.Point(113, 12);
+            this.cbbLoaiNV.Location = new System.Drawing.Point(151, 15);
+            this.cbbLoaiNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbLoaiNV.Name = "cbbLoaiNV";
-            this.cbbLoaiNV.Size = new System.Drawing.Size(225, 36);
+            this.cbbLoaiNV.Size = new System.Drawing.Size(299, 36);
             this.cbbLoaiNV.TabIndex = 29;
             this.cbbLoaiNV.SelectedIndexChanged += new System.EventHandler(this.cbbLoaiNV_SelectedIndexChanged);
             // 
@@ -87,12 +89,13 @@
             this.txtSearchNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchNV.Location = new System.Drawing.Point(578, 12);
+            this.txtSearchNV.Location = new System.Drawing.Point(771, 15);
+            this.txtSearchNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearchNV.Name = "txtSearchNV";
             this.txtSearchNV.PasswordChar = '\0';
             this.txtSearchNV.PlaceholderText = "";
             this.txtSearchNV.SelectedText = "";
-            this.txtSearchNV.Size = new System.Drawing.Size(225, 36);
+            this.txtSearchNV.Size = new System.Drawing.Size(300, 44);
             this.txtSearchNV.TabIndex = 32;
             this.txtSearchNV.Click += new System.EventHandler(this.txtSearchNV_Click);
             this.txtSearchNV.Leave += new System.EventHandler(this.txtSearchNV_Leave);
@@ -108,15 +111,18 @@
             this.btnSearchNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
             this.btnSearchNV.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnSearchNV.ForeColor = System.Drawing.Color.Black;
-            this.btnSearchNV.Location = new System.Drawing.Point(836, 12);
+            this.btnSearchNV.Location = new System.Drawing.Point(1115, 15);
+            this.btnSearchNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSearchNV.Name = "btnSearchNV";
-            this.btnSearchNV.Size = new System.Drawing.Size(114, 35);
+            this.btnSearchNV.Size = new System.Drawing.Size(152, 43);
             this.btnSearchNV.TabIndex = 34;
             this.btnSearchNV.Text = "Tìm kiếm";
             this.btnSearchNV.Click += new System.EventHandler(this.btnSearchNV_Click);
             // 
             // dataNV
             // 
+            this.dataNV.AllowUserToResizeColumns = false;
+            this.dataNV.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dataNV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -143,7 +149,8 @@
             this.dataNV.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataNV.EnableHeadersVisualStyles = false;
             this.dataNV.GridColor = System.Drawing.Color.LightGray;
-            this.dataNV.Location = new System.Drawing.Point(15, 54);
+            this.dataNV.Location = new System.Drawing.Point(20, 66);
+            this.dataNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataNV.Name = "dataNV";
             this.dataNV.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -155,8 +162,9 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataNV.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataNV.RowHeadersVisible = false;
+            this.dataNV.RowHeadersWidth = 51;
             this.dataNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataNV.Size = new System.Drawing.Size(935, 495);
+            this.dataNV.Size = new System.Drawing.Size(1247, 609);
             this.dataNV.TabIndex = 35;
             this.dataNV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataNV.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -184,7 +192,7 @@
             // 
             this.btnDelNV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnDelNV.AutoRoundedCorners = true;
-            this.btnDelNV.BorderRadius = 16;
+            this.btnDelNV.BorderRadius = 20;
             this.btnDelNV.BorderThickness = 1;
             this.btnDelNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDelNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -193,9 +201,10 @@
             this.btnDelNV.FillColor = System.Drawing.Color.LightGray;
             this.btnDelNV.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnDelNV.ForeColor = System.Drawing.Color.Black;
-            this.btnDelNV.Location = new System.Drawing.Point(649, 555);
+            this.btnDelNV.Location = new System.Drawing.Point(865, 683);
+            this.btnDelNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelNV.Name = "btnDelNV";
-            this.btnDelNV.Size = new System.Drawing.Size(93, 35);
+            this.btnDelNV.Size = new System.Drawing.Size(124, 43);
             this.btnDelNV.TabIndex = 38;
             this.btnDelNV.Text = "Xóa";
             this.btnDelNV.Click += new System.EventHandler(this.btnDelNV_Click);
@@ -204,7 +213,7 @@
             // 
             this.btnUpdateNV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnUpdateNV.AutoRoundedCorners = true;
-            this.btnUpdateNV.BorderRadius = 16;
+            this.btnUpdateNV.BorderRadius = 20;
             this.btnUpdateNV.BorderThickness = 1;
             this.btnUpdateNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUpdateNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -213,9 +222,10 @@
             this.btnUpdateNV.FillColor = System.Drawing.Color.LightGray;
             this.btnUpdateNV.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnUpdateNV.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateNV.Location = new System.Drawing.Point(546, 555);
+            this.btnUpdateNV.Location = new System.Drawing.Point(728, 683);
+            this.btnUpdateNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdateNV.Name = "btnUpdateNV";
-            this.btnUpdateNV.Size = new System.Drawing.Size(97, 35);
+            this.btnUpdateNV.Size = new System.Drawing.Size(129, 43);
             this.btnUpdateNV.TabIndex = 37;
             this.btnUpdateNV.Text = "Cập nhật";
             this.btnUpdateNV.Click += new System.EventHandler(this.btnUpdateNV_Click);
@@ -225,7 +235,7 @@
             this.btnAddNV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnAddNV.AutoRoundedCorners = true;
             this.btnAddNV.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddNV.BorderRadius = 16;
+            this.btnAddNV.BorderRadius = 20;
             this.btnAddNV.BorderThickness = 1;
             this.btnAddNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -234,9 +244,10 @@
             this.btnAddNV.FillColor = System.Drawing.Color.LightGray;
             this.btnAddNV.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnAddNV.ForeColor = System.Drawing.Color.Black;
-            this.btnAddNV.Location = new System.Drawing.Point(444, 555);
+            this.btnAddNV.Location = new System.Drawing.Point(592, 683);
+            this.btnAddNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddNV.Name = "btnAddNV";
-            this.btnAddNV.Size = new System.Drawing.Size(96, 35);
+            this.btnAddNV.Size = new System.Drawing.Size(128, 43);
             this.btnAddNV.TabIndex = 36;
             this.btnAddNV.Text = "Thêm";
             this.btnAddNV.Click += new System.EventHandler(this.btnAddNV_Click);
@@ -257,17 +268,18 @@
             "Ten nhan vien",
             "Luong",
             "Ngay lam viec"});
-            this.cbbSortNV.Location = new System.Drawing.Point(748, 555);
+            this.cbbSortNV.Location = new System.Drawing.Point(997, 683);
+            this.cbbSortNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbSortNV.Name = "cbbSortNV";
-            this.cbbSortNV.Size = new System.Drawing.Size(202, 36);
+            this.cbbSortNV.Size = new System.Drawing.Size(268, 36);
             this.cbbSortNV.TabIndex = 39;
             this.cbbSortNV.SelectedIndexChanged += new System.EventHandler(this.cbbSortNV_SelectedIndexChanged);
             // 
             // fNhanVien1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 603);
+            this.ClientSize = new System.Drawing.Size(1283, 742);
             this.Controls.Add(this.cbbSortNV);
             this.Controls.Add(this.btnDelNV);
             this.Controls.Add(this.btnUpdateNV);
@@ -277,6 +289,7 @@
             this.Controls.Add(this.txtSearchNV);
             this.Controls.Add(this.cbbLoaiNV);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "fNhanVien1";
             this.Text = "fNhanVien1";
             ((System.ComponentModel.ISupportInitialize)(this.dataNV)).EndInit();

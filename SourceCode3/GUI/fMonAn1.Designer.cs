@@ -50,9 +50,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(12, 10);
+            this.label3.Location = new System.Drawing.Point(16, 12);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 21);
+            this.label3.Size = new System.Drawing.Size(125, 28);
             this.label3.TabIndex = 1;
             this.label3.Text = "Loại món ăn";
             // 
@@ -68,9 +69,10 @@
             this.cbbLoaiMonAn.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbbLoaiMonAn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbbLoaiMonAn.ItemHeight = 30;
-            this.cbbLoaiMonAn.Location = new System.Drawing.Point(129, 9);
+            this.cbbLoaiMonAn.Location = new System.Drawing.Point(172, 11);
+            this.cbbLoaiMonAn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbLoaiMonAn.Name = "cbbLoaiMonAn";
-            this.cbbLoaiMonAn.Size = new System.Drawing.Size(225, 36);
+            this.cbbLoaiMonAn.Size = new System.Drawing.Size(299, 36);
             this.cbbLoaiMonAn.TabIndex = 14;
             this.cbbLoaiMonAn.SelectedIndexChanged += new System.EventHandler(this.cbbLoaiMonAn_SelectedIndexChanged);
             // 
@@ -88,19 +90,20 @@
             this.txtSearchMA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearchMA.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchMA.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchMA.Location = new System.Drawing.Point(633, 10);
+            this.txtSearchMA.Location = new System.Drawing.Point(844, 12);
+            this.txtSearchMA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearchMA.Name = "txtSearchMA";
             this.txtSearchMA.PasswordChar = '\0';
             this.txtSearchMA.PlaceholderText = "";
             this.txtSearchMA.SelectedText = "";
-            this.txtSearchMA.Size = new System.Drawing.Size(196, 38);
+            this.txtSearchMA.Size = new System.Drawing.Size(261, 47);
             this.txtSearchMA.TabIndex = 21;
             // 
             // btnSearchMonAn
             // 
             this.btnSearchMonAn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSearchMonAn.AutoRoundedCorners = true;
-            this.btnSearchMonAn.BorderRadius = 16;
+            this.btnSearchMonAn.BorderRadius = 20;
             this.btnSearchMonAn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchMonAn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSearchMonAn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -108,15 +111,18 @@
             this.btnSearchMonAn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
             this.btnSearchMonAn.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnSearchMonAn.ForeColor = System.Drawing.Color.Black;
-            this.btnSearchMonAn.Location = new System.Drawing.Point(835, 12);
+            this.btnSearchMonAn.Location = new System.Drawing.Point(1113, 15);
+            this.btnSearchMonAn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSearchMonAn.Name = "btnSearchMonAn";
-            this.btnSearchMonAn.Size = new System.Drawing.Size(114, 35);
+            this.btnSearchMonAn.Size = new System.Drawing.Size(152, 43);
             this.btnSearchMonAn.TabIndex = 22;
             this.btnSearchMonAn.Text = "Tìm kiếm";
             this.btnSearchMonAn.Click += new System.EventHandler(this.btnSearchMonAn_Click);
             // 
             // dataMonAn
             // 
+            this.dataMonAn.AllowUserToResizeColumns = false;
+            this.dataMonAn.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dataMonAn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataMonAn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -143,7 +149,8 @@
             this.dataMonAn.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataMonAn.EnableHeadersVisualStyles = false;
             this.dataMonAn.GridColor = System.Drawing.Color.LightGray;
-            this.dataMonAn.Location = new System.Drawing.Point(16, 54);
+            this.dataMonAn.Location = new System.Drawing.Point(21, 66);
+            this.dataMonAn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataMonAn.Name = "dataMonAn";
             this.dataMonAn.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -155,8 +162,9 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataMonAn.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataMonAn.RowHeadersVisible = false;
+            this.dataMonAn.RowHeadersWidth = 51;
             this.dataMonAn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataMonAn.Size = new System.Drawing.Size(934, 495);
+            this.dataMonAn.Size = new System.Drawing.Size(1245, 609);
             this.dataMonAn.TabIndex = 23;
             this.dataMonAn.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataMonAn.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -192,9 +200,10 @@
             this.btnAddMonAn.FillColor = System.Drawing.Color.LightGray;
             this.btnAddMonAn.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnAddMonAn.ForeColor = System.Drawing.Color.Black;
-            this.btnAddMonAn.Location = new System.Drawing.Point(365, 556);
+            this.btnAddMonAn.Location = new System.Drawing.Point(487, 684);
+            this.btnAddMonAn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddMonAn.Name = "btnAddMonAn";
-            this.btnAddMonAn.Size = new System.Drawing.Size(114, 35);
+            this.btnAddMonAn.Size = new System.Drawing.Size(152, 43);
             this.btnAddMonAn.TabIndex = 24;
             this.btnAddMonAn.Text = "Thêm";
             this.btnAddMonAn.Click += new System.EventHandler(this.btnAddMonAn_Click);
@@ -211,9 +220,10 @@
             this.btnUpdateMonAn.FillColor = System.Drawing.Color.LightGray;
             this.btnUpdateMonAn.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnUpdateMonAn.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateMonAn.Location = new System.Drawing.Point(485, 556);
+            this.btnUpdateMonAn.Location = new System.Drawing.Point(647, 684);
+            this.btnUpdateMonAn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdateMonAn.Name = "btnUpdateMonAn";
-            this.btnUpdateMonAn.Size = new System.Drawing.Size(114, 35);
+            this.btnUpdateMonAn.Size = new System.Drawing.Size(152, 43);
             this.btnUpdateMonAn.TabIndex = 25;
             this.btnUpdateMonAn.Text = "Cập nhật";
             this.btnUpdateMonAn.Click += new System.EventHandler(this.btnUpdateMonAn_Click);
@@ -230,9 +240,10 @@
             this.btnDelMonAn.FillColor = System.Drawing.Color.LightGray;
             this.btnDelMonAn.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.btnDelMonAn.ForeColor = System.Drawing.Color.Black;
-            this.btnDelMonAn.Location = new System.Drawing.Point(605, 555);
+            this.btnDelMonAn.Location = new System.Drawing.Point(807, 683);
+            this.btnDelMonAn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelMonAn.Name = "btnDelMonAn";
-            this.btnDelMonAn.Size = new System.Drawing.Size(114, 35);
+            this.btnDelMonAn.Size = new System.Drawing.Size(152, 43);
             this.btnDelMonAn.TabIndex = 26;
             this.btnDelMonAn.Text = "Xóa";
             this.btnDelMonAn.Click += new System.EventHandler(this.btnDelMonAn_Click);
@@ -253,17 +264,18 @@
             "Ten mon an",
             "Gia tien",
             "So luong"});
-            this.cbbSort.Location = new System.Drawing.Point(725, 555);
+            this.cbbSort.Location = new System.Drawing.Point(967, 683);
+            this.cbbSort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbSort.Name = "cbbSort";
-            this.cbbSort.Size = new System.Drawing.Size(225, 36);
+            this.cbbSort.Size = new System.Drawing.Size(299, 36);
             this.cbbSort.TabIndex = 27;
             this.cbbSort.SelectedIndexChanged += new System.EventHandler(this.cbbSort_SelectedIndexChanged);
             // 
             // fMonAn1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 603);
+            this.ClientSize = new System.Drawing.Size(1283, 742);
             this.Controls.Add(this.cbbSort);
             this.Controls.Add(this.btnDelMonAn);
             this.Controls.Add(this.btnUpdateMonAn);
@@ -273,6 +285,7 @@
             this.Controls.Add(this.txtSearchMA);
             this.Controls.Add(this.cbbLoaiMonAn);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "fMonAn1";
             this.Text = "fMonAn1";
             ((System.ComponentModel.ISupportInitialize)(this.dataMonAn)).EndInit();

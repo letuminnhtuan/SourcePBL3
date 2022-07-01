@@ -43,26 +43,18 @@ namespace SourceCode.GUI
                 MessageBox.Show("Sai thông tin đăng nhập!");
             }
         }
-
         private void checkMK_CheckedChanged(object sender, EventArgs e)
         {
-            //this.txtPass.UseSystemPasswordChar = !this.txtPass.UseSystemPasswordChar;
             txtPass.PasswordChar = CheckMK.Checked ?  '\0' : '●';
         }
-
-        
-
         private void fLogin_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             lbTimer.Text = DateTime.Now.ToString("HH:mm");
             lbTimer2.Text = DateTime.Now.ToString("dd/MM/yyy");
-          
         }
     }
 }

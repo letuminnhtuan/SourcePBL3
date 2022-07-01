@@ -69,6 +69,7 @@ namespace SourceCode.GUI
             {
                 string MaMonAn = ((CBBItem)this.cbbMonAn.SelectedItem).Key;
                 this.numMon.Maximum = BLL_QLMA.Instance.GetMonAnByMaMonAn(MaMonAn).SoLuong;
+                this.numMon.Value = 0;
             }
         }
         public void Order(object o, EventArgs e)
@@ -78,6 +79,7 @@ namespace SourceCode.GUI
             this.o = o;
             if (!BLL_QLDatmon.Instance.GetStatusBanAn(((Guna2Button)o).Text))
             {
+                ReloadForm();
                 List<DatMonAn> data = BLL_QLHoaDon.Instance.GetHoaDonHienTaiByMaBan(((Guna2Button)o).Text);
                 foreach (DatMonAn i in data)
                 {
@@ -92,32 +94,36 @@ namespace SourceCode.GUI
         {
             if (this.cbbMonAn.SelectedIndex >= 0)
             {
-                DatMonAn data = new DatMonAn
+                if(this.numMon.Value > 0)
                 {
-                    MaMonAn = ((CBBItem)this.cbbMonAn.SelectedItem).Key,
-                    SoLuong = Convert.ToInt32(this.numMon.Value),
-                };
-                data.TongTien = BLL_QLMA.Instance.GetMonAnByMaMonAn(data.MaMonAn).GiaTien * data.SoLuong;
-                if (Check(data.MaMonAn) && data.SoLuong != 0) temp.Add(data);
-                else if (data.SoLuong != 0)
-                {
-                    for (int i = 0; i < temp.Count; i++)
+                    DatMonAn data = new DatMonAn
                     {
-                        if (temp[i].MaMonAn.Equals(data.MaMonAn))
+                        MaMonAn = ((CBBItem)this.cbbMonAn.SelectedItem).Key,
+                        SoLuong = Convert.ToInt32(this.numMon.Value),
+                    };
+                    data.TongTien = BLL_QLMA.Instance.GetMonAnByMaMonAn(data.MaMonAn).GiaTien * data.SoLuong;
+                    if (Check(data.MaMonAn) && data.SoLuong != 0) temp.Add(data);
+                    else if (data.SoLuong != 0)
+                    {
+                        for (int i = 0; i < temp.Count; i++)
                         {
-                            temp[i].SoLuong += data.SoLuong;
-                            temp[i].TongTien += data.TongTien;
-                            break;
+                            if (temp[i].MaMonAn.Equals(data.MaMonAn))
+                            {
+                                temp[i].SoLuong += data.SoLuong;
+                                temp[i].TongTien += data.TongTien;
+                                break;
+                            }
                         }
                     }
+                    LoadDSDatMon();
+                    decimal Tong = 0;
+                    foreach (DatMonAn i in temp)
+                    {
+                        Tong += i.TongTien;
+                    }
+                    this.txtTien.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", Tong);
                 }
-                LoadDSDatMon();
-                decimal Tong = 0;
-                foreach (DatMonAn i in temp)
-                {
-                    Tong += i.TongTien;
-                }
-                this.txtTien.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", Tong);
+                else MessageBox.Show("Chọn số lượng món ăn cần đặt!", "Error!!"); 
             }
             else MessageBox.Show("Chọn món ăn cần đặt!", "Error!!");
         }
@@ -165,15 +171,16 @@ namespace SourceCode.GUI
                     ReloadForm();
                     ((Guna2Button)o).FillColor = Color.FromArgb(255, 51, 51);
                 }
+                else MessageBox.Show("Chọn cách thức thanh toán!!");
             }
         }
         public void ReloadForm()
         {
             this.dataDatMon.Rows.Clear();
-            this.cbbLoaiMonAn.Text = "";
-            this.cbbMonAn.Text = "";
-            this.txtThe.Text = "";
-            this.txtTien.Text = "";
+            this.cbbLoaiMonAn.Text = " ";
+            this.cbbMonAn.Text = " ";
+            this.txtThe.Text = " ";
+            this.txtTien.Text = " ";
             this.numMon.Maximum = 0;
             this.numMon.Value = 0;
         }
@@ -193,6 +200,7 @@ namespace SourceCode.GUI
                     ((Guna2Button)o).FillColor = Color.PaleGreen;
                     BLL_QLDatmon.Instance.SetStatusBanAn(MaBanAn, true);
                 }
+                ReloadForm();
             }
         }
         private void dataDatMon_CellContentClick(object sender, DataGridViewCellEventArgs e)
