@@ -62,7 +62,7 @@ namespace SourceCode.GUI
         {
             fMonAn2 f = new fMonAn2("");
             f.MyDel = new fMonAn2.Del(ShowDSMonAn);
-            f.Show();
+            f.ShowDialog();
         }
         private void btnUpdateMonAn_Click(object sender, EventArgs e)
         {
@@ -71,7 +71,7 @@ namespace SourceCode.GUI
                 string MaMonAn = this.dataMonAn.SelectedRows[0].Cells["MaMonAn"].Value.ToString();
                 fMonAn2 f = new fMonAn2(MaMonAn);
                 f.MyDel = new fMonAn2.Del(ShowDSMonAn);
-                f.Show();
+                f.ShowDialog();
             }
         }
         private void cbbSort_SelectedIndexChanged(object sender, EventArgs e)

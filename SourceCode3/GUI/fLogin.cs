@@ -29,12 +29,12 @@ namespace SourceCode.GUI
                 if (BLL_QLNV.Instance.LogIn(username,pass).LoaiThanhVien == "ADMIN")
                 {
                     fMainAdmin f = new fMainAdmin(BLL_QLNV.Instance.LogIn(username, pass).LoaiThanhVien, BLL_QLNV.Instance.LogIn(username, pass).TenDangNhap);
-                    f.Show();
+                    f.ShowDialog();
                 }
                 if (BLL_QLNV.Instance.LogIn(username, pass).LoaiThanhVien == "NHANVIEN")
                 {
                     fMainUser f = new fMainUser(BLL_QLNV.Instance.LogIn(username, pass).LoaiThanhVien, BLL_QLNV.Instance.LogIn(username, pass).TenDangNhap);
-                    f.Show();
+                    f.ShowDialog();
                 }
 
             }

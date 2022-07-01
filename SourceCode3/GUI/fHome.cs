@@ -79,7 +79,6 @@ namespace SourceCode.GUI
             this.o = o;
             if (!BLL_QLDatmon.Instance.GetStatusBanAn(((Guna2Button)o).Text))
             {
-                ReloadForm();
                 List<DatMonAn> data = BLL_QLHoaDon.Instance.GetHoaDonHienTaiByMaBan(((Guna2Button)o).Text);
                 foreach (DatMonAn i in data)
                 {
