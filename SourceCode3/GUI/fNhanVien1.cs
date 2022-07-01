@@ -60,7 +60,7 @@ namespace SourceCode.GUI
         {
             fNhanVien2 f = new fNhanVien2("");
             f.D = new fNhanVien2.Del(ShowDSThanhVien);
-            f.Show();
+            f.ShowDialog();
         }
 
         private void btnUpdateNV_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace SourceCode.GUI
                 string TenDN = this.dataNV.SelectedRows[0].Cells["TenDangNhap"].Value.ToString();
                 fNhanVien2 f = new fNhanVien2(TenDN);
                 f.D = new fNhanVien2.Del(ShowDSThanhVien);
-                f.Show();
+                f.ShowDialog();
             }
         }
 
